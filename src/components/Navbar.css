@@ -1,0 +1,42 @@
+.navbar {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 5;
+  top: 0;
+  padding: 15px;
+
+  background-image: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 10%,
+    transparent
+  );
+
+  /* animation */
+  transition: all 0.4s;
+}
+
+.navbar.navbar--dark {
+  background-color: #000000;
+}
+
+.navbar .navbar__contents {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .navbar__contents .navbar__logo {
+  width: 100px;
+  /* height: 30px; */
+  cursor: pointer;
+  object-fit: contain;
+}
+
+.navbar .navbar__contents .navbar__avatar {
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
