@@ -1,16 +1,23 @@
 .banner {
   width: 100%;
-  height: 448px;
+  /* height: 448px; */
+  height: 600px;
   margin-top: -22px;
   color: white;
   object-fit: contain;
   position: relative;
+
+  display: flex;
+  align-items: center;
 }
 
 .banner .banner__contents {
   margin-left: 30px;
-  padding-top: 140px;
+  /* padding-top: 140px; */
   height: 190px;
+  width: 100%;
+  z-index: 2;
+  position: absolute;
 }
 
 .banner .banner__contents .banner__title {
@@ -69,7 +76,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 7.4rem;
+  height: 300px;
   background-image: linear-gradient(
     180deg,
     transparent,
