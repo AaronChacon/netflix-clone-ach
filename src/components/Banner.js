@@ -22,8 +22,6 @@ const Banner = () => {
     fetchData();
   }, []);
 
-  console.log(movie);
-
   const bannerBg = movie
     ? `"https://image.tmdb.org/t/p/original/${movie?.backdrop_path}"`
     : "https://upload.wikimedia.org/wikipedia/commons/c/cd/Black_flag.svg";
