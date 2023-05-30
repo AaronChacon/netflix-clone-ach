@@ -31,7 +31,7 @@ const Banner = () => {
       className="banner"
       style={{
         backgroundSize: "cover",
-        // backgroundPosition: "center center",
+        backgroundPosition: "center center",
         backgroundImage: `url(${bannerBg})`,
       }}
     >
