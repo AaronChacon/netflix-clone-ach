@@ -204,6 +204,14 @@ button,
   -webkit-appearance: button;
 }
 
+button {
+  transition: all 0.3s ease;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
 /**
    * Remove the inner border and padding in Firefox.
    */
