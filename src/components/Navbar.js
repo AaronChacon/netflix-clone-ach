@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { useHistory } from "react-router-dom";
 import "./Navbar.css";
 
 const Navbar = () => {
   const [show, setHandleShow] = useState(false);
+  const history = useHistory();
 
   useEffect(() => {
     window.addEventListener("scroll", transitionNavbar);
@@ -28,6 +30,7 @@ const Navbar = () => {
         />
 
         <img
+          onClick={() => history.push("/profile")}
           className="navbar__avatar"
           src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
           alt=""

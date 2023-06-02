@@ -1,15 +1,15 @@
 import React, { useEffect } from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
+import { login, logout, selectUser } from "./redux/slices/userSlice";
 import { auth } from "./firebase.config";
 import "./App.css";
 import HomePage from "./pages/Home";
 import LoginPage from "./pages/Login";
-import { login, logout, selectUser } from "./redux/slices/userSlice";
+import ProfilePage from "./pages/Profile";
 
 function App() {
   const user = useSelector(selectUser);
-  console.log(user);
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -38,7 +38,9 @@ function App() {
           <LoginPage />
         ) : (
           <Switch>
-            <Route path="/profile"></Route>
+            <Route exact path="/profile">
+              <ProfilePage />
+            </Route>
             <Route exact path="/">
               <HomePage />;
             </Route>
