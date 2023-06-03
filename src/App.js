@@ -24,7 +24,7 @@ function App() {
         );
       } else {
         // Logged out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
 
@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="app">
       <Router>
-        {!user ? (
+        {!user.user ? (
           <LoginPage />
         ) : (
           <Switch>

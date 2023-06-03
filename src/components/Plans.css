@@ -1,0 +1,37 @@
+.plans {
+  width: 100%;
+}
+
+.plans .plans__item {
+  width: 100%;
+  padding: 20px;
+  opacity: 0.8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.plans .plans__item:hover {
+  opacity: 1;
+}
+
+.plans .plans__item.plans__item--disable > button {
+  background-color: gray;
+}
+
+.plans .plans__item > button {
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #e50914;
+}
+
+/* .plans .plans__item .plans__info {
+} */
+
+.plans .plans__item .plans__info > h5,
+h6 {
+  margin: 0;
+}
